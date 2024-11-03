@@ -804,6 +804,7 @@ ol {
 }
 .classynav .nav-item.dropdown {
     position: relative;
+    z-index: 1000;
 }
 
 .classynav .nav-item.dropdown .dropdown-menu {
