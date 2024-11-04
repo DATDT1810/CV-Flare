@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/Templatecv.css">
+    <link rel="stylesheet" href="./js/main.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DatResume</title>
+
+      <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/css/Admin.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="">
+            <span class="d-none d-lg-block">CV-Flare</span>
+          </a>
+          <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+    
+        <div class="search-bar">
+          <form class="search-form d-flex align-items-center" method="POST" action="#">
+            <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+            <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+          </form>
+        </div><!-- End Search Bar -->
+    
+        <nav class="header-nav ms-auto">
+          <ul class="d-flex align-items-center">
+    
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link nav-icon search-bar-toggle " href="#">
+                <i class="bi bi-search"></i>
+              </a>
+            </li><!-- End Search Icon-->
+    
+            <li class="nav-item dropdown">
+    
+              <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                <i class="bi bi-bell"></i>
+                <span class="badge bg-primary badge-number">4</span>
+              </a><!-- End Notification Icon -->
+    
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                <li class="dropdown-header">
+                  You have 4 new notifications
+                  <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+    
+                <li class="notification-item">
+                  <i class="bi bi-exclamation-circle text-warning"></i>
+                  <div>
+                    <h4>Lorem Ipsum</h4>
+                    <p>Quae dolorem earum veritatis oditseno</p>
+                    <p>30 min. ago</p>
+                  </div>
+                </li>
+    
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+    
+                <li class="notification-item">
+                  <i class="bi bi-x-circle text-danger"></i>
+                  <div>
+                    <h4>Atque rerum nesciunt</h4>
+                    <p>Quae dolorem earum veritatis oditseno</p>
+                    <p>1 hr. ago</p>
+                  </div>
+                </li>
+    
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+    
+                <li class="notification-item">
+                  <i class="bi bi-check-circle text-success"></i>
+                  <div>
+                    <h4>Sit rerum fuga</h4>
+                    <p>Quae dolorem earum veritatis oditseno</p>
+                    <p>2 hrs. ago</p>
+                  </div>
+                </li>
+    
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+    
+                <li class="notification-item">
+                  <i class="bi bi-info-circle text-primary"></i>
+                  <div>
+                    <h4>Dicta reprehenderit</h4>
+                    <p>Quae dolorem earum veritatis oditseno</p>
+                    <p>4 hrs. ago</p>
+                  </div>
+                </li>
+    
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li class="dropdown-footer">
+                  <a href="#">Show all notifications</a>
+                </li>
+    
+              </ul><!-- End Notification Dropdown Items -->
+    
+            </li><!-- End Notification Nav -->
+    
+            <li class="nav-item dropdown">
+    
+              <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                <i class="bi bi-chat-left-text"></i>
+                <span class="badge bg-success badge-number">3</span>
+              </a><!-- End Messages Icon -->
+    
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+                <li class="dropdown-header">
+                  You have 3 new messages
+                  <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+    
+                <li class="message-item">
+                  <a href="#">
+                    <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                    <div>
+                      <h4>Maria Hudson</h4>
+                      <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                      <p>4 hrs. ago</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+    
+                <li class="message-item">
+                  <a href="#">
+                    <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                    <div>
+                      <h4>Anna Nelson</h4>
+                      <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                      <p>6 hrs. ago</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+    
+                <li class="message-item">
+                  <a href="#">
+                    <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                    <div>
+                      <h4>David Muldon</h4>
+                      <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                      <p>8 hrs. ago</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+    
+                <li class="dropdown-footer">
+                  <a href="#">Show all messages</a>
+                </li>
+    
+              </ul><!-- End Messages Dropdown Items -->
+    
+            </li><!-- End Messages Nav -->
+    
+            <li class="nav-item dropdown pe-3">
+    
+              <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+                <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+              </a><!-- End Profile Iamge Icon -->
+    
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                <li class="dropdown-header">
+                  <h6>Kevin Anderson</h6>
+                  <span>Web Designer</span>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+    
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                    <i class="bi bi-person"></i>
+                    <span>My Profile</span>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+    
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                    <i class="bi bi-gear"></i>
+                    <span>Account Settings</span>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+    
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                    <i class="bi bi-question-circle"></i>
+                    <span>Need Help?</span>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+    
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Sign Out</span>
+                  </a>
+                </li>
+    
+              </ul><!-- End Profile Dropdown Items -->
+            </li><!-- End Profile Nav -->
+    
+          </ul>
+        </nav><!-- End Icons Navigation -->
+    
+      </header>
+
+      <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">
+                    <i class="bi bi-grid"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
+
+            <li class="nav-item">
+              <a class="nav-link collapsed" href="TemplateCV.html">
+                  <i class="bi bi-box-arrow-in-left"></i>
+                  <span>CV</span>
+              </a>
+          </li>
+           <!-- End Components Nav -->
+
+           <!-- End Forms Nav -->
+
+         <!-- End Tables Nav -->
+
+          <!-- End Icons Nav -->
+
+            <li class="nav-heading">Pages</li>
+
+           <!-- End Profile Page Nav -->
+
+          <!-- End F.A.Q Page Nav -->
+
+           <!-- End Contact Page Nav -->
+<!-- End Register Page Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="index.html">
+                    <i class="bi bi-box-arrow-in-left"></i>
+                    <span>Logout</span>
+                </a>
+            </li><!-- End Login Page Nav -->
+
+           <!-- End Error 404 Page Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="pages-blank.html">
+                    <i class="bi bi-file-earmark"></i>
+                    <span>Blank</span>
+                </a>
+            </li><!-- End Blank Page Nav -->
+
+        </ul>
+
+    </aside>
+
+    <main>
+        <aside class="sider-left" >
+            <section class="avatar">
+                <div class="avatar_img">
+                    <img src="./img/HoangKhoi.jpg" alt="Picture Duong Tan Dat">
+                </div>
+                <h2 class="avatar-name">Nguyễn Hoàng Khôi</h2>
+                <p class="career">Web design and developer</p>
+            </section>
+
+            <section class="contact-info">
+                <p class="main-title">info</p>
+                <ul>
+                    <li>
+                        <span class="icon"><img src="./img/location.png" alt="Picture address"></span>
+                        <span class="text-title">Address: <br>
+                            <i>672, 30-4 street, Ninh Kieu District</i>
+                        </span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span class="icon"><img src="./img/call.png" alt="Picture phone"></span>
+                        <span class="text-title">Phone: <br>
+                            <i>+84 0378196581</i>
+                        </span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span class="icon"><img src="./img/mail.png" alt="Picture email"></span>
+                        <span class="text-title">Email: <br>
+                            <i>datdtce171751.fpt.edu.vn</i>
+                        </span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="social-nextwork">
+                <p class="main-title">social</p>
+                <ul>
+                    <li>
+                        <span class="icon"><img src="./img/skype.png" alt="Picture skype"></span>
+                        <span class="text-title">Skype: <br>
+                            <i>skype.com/duongtandat</i>
+                        </span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span class="icon"><img src="./img/facebook.png" alt="Picture facebook"></span>
+                        <span class="text-title">Facebook: <br>
+                            <i>facebook.com/duongtandat</i>
+                        </span>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+
+        <aside class="sider-right">
+            <!-- Begin Section Object -->
+            <section id="object">
+                <img src="./img/user.png" alt="Picture user">
+                <h3>Resume Objective</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis porro in debitis
+                    saepe laboriosam maxime cumque iste, fuga minima tempora et suscipit quidem labore nulla quos amet
+                    obcaecati id deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed
+                    tenetur.</p>
+            </section>
+            <!-- End Section Object -->
+            <!-- Section experience -->
+            <section id="experience">
+                <div class="right-heading">
+                    <img src="./img/pencil.png" alt="Picture pencil">
+                    <h3>Experience</h3>
+                </div>
+
+                <div class="ex-box">
+                    <div class="ex-left">
+                        <p class="year">08/2021 - 05/2023</p>
+                        <p class="address-company">In Can Tho</p>
+                    </div>
+
+                    <div class="ex-right">
+                        <p class="name-company">Working at Gia Viet language center</p>
+                        <p class="text">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Quisquam veniam neque itaque, earum. Ea aut enim est rerum
+                            pariatur assumenda
+                            totam earum.</p>
+                    </div>
+                </div>
+                <div class="ex-box">
+                    <div class="ex-left">
+                        <p class="year">04/2019 - 01/2023</p>
+                        <p class="address-company">In Can Tho</p>
+                    </div>
+
+                    <div class="ex-right">
+                        <p class="name-company">Developer at FPT Software</p>
+                        <p class="text">Developer Business Analyst (Accounting And Payment System)</p>
+                    </div>
+                </div>
+            </section>
+            <!-- End Section Experience -->
+            <!-- Section education -->
+            <section id="education">
+                <div class="right-heading">
+                    <img src="./img/edu.png" alt="Picture education">
+                    <h3>Education</h3>
+                </div>
+
+                <table>
+                    <tr>
+                        <th>Years</th>
+                        <th>Qualification</th>
+                        <th>Study place</th>
+                    </tr>
+                    <tr>
+                        <td>2021-2025</td>
+                        <td>University education</td>
+                        <td>FPT University</td>
+                    </tr>
+                    <tr>
+                        <td>2017-2021</td>
+                        <td>Hight school education</td>
+                        <td>Tan Luoc Hight school</td>
+                    </tr>
+                    <tr>
+                        <td>2012-2017</td>
+                        <td>Secondary school education</td>
+                        <td>Tan An Thanh Secondary school</td>
+                    </tr>
+                    <tr>
+                        <td>2008-2012</td>
+                        <td>Primary school education</td>
+                        <td>Tan An Thanh Primary school</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="about-skill">
+                <div class="right-heading">
+                    <img src="./img/edu.png" alt="Picture book-skill">
+                    <h3>Skills</h3>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-left">
+                        <div class="title1-skill">
+                            <p class="title">Database</p>
+                            <div class="percent">
+                                <div style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="title2-skill">
+                            <p class="title">Web Design</p>
+                            <div class="percent">
+                                <div style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-right">
+                        <div class="title1-skill">
+                            <p class="title">HTML</p>
+                            <div class="percent">
+                                <div style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="title2-skill">
+                            <p class="title">CSS</p>
+                            <div class="percent">
+                                <div style="width: 75%;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="hoppy">
+                <div class="right-heading">
+                    <img src="./img/hobbies.png" alt="Picture hoppy">
+                    <h3>Hoppy</h3>
+                </div>
+                <div class="hoppy-box">
+                    <img src="./img/bicycle.png" alt="Picture bicycle">
+                    <img src="./img/games.png" alt="Picture game">
+                    <img src="./img/book.png" alt="Picture book">
+                    <img src="./img/design.png" alt="Picture design">
+                    <img src="./img/chess.png" alt="Picture chess">
+                </div>
+            </section>
+            <section id="my-contact">
+                <div class="right-heading">
+                    <img src="./img/hobbies.png" alt="Picture contact">
+                    <h3>Contact</h3>
+                </div>
+                <div class="contact-box">
+                    <form method="get">
+                        <div class="left-box">
+                            <div class="input-icon">
+                                <label for="fname">First Name</label> <br>
+                                <i class="fa fa-user icon"></i>
+                                <input class="input-field" name="username" type="text" placeholder="Type first name">
+                            </div>
+
+                            <div class="input-icon">
+                                <label for="mail">Email</label> <br>
+                                <i class="fa fa-envelope icon" aria-hidden="true"></i>
+                                <input class="input-field" name="useremail" type="text"
+                                    placeholder="Type mail address 1234@gamil.com">
+                            </div>
+
+                            <div class="input-icon">
+                                <label for="support">Support:</label> <br>
+                                <select name="sp" id="sp-select">
+                                    <option value="html">HTML</option>
+                                    <option value="java">Java</option>
+                                    <option value="csharp">Csharp</option>
+                                    <option value="css">Css</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="right-box">
+                            <div class="input-icon">
+                                <label for="lname">Last Name</label> <br>
+                                <i class="fa fa-user icon"></i>
+                                <input class="input-field" name="username" type="text" placeholder="Type last name">
+                            </div>
+
+                            <div class="input-icon">
+                                <label for="mobile">Mobile No</label> <br>
+                                <i class="fa fa-phone icon"></i>
+                                <input class="input-field" name="userphone" type="text" placeholder="Type phone No">
+                            </div>
+
+                            <div class="contact-right">
+                                <label for="choose">Chose interests:</label> <br>
+                                <input name="choose" value="java" type="checkbox"> Java
+                                <input name="choose" value="csharp" type="checkbox"> Csharp
+                                <input name="choose" value="html" type="checkbox"> HTML
+                                <input name="choose" value="css" type="checkbox"> CSS
+                            </div>
+                        </div>
+                    </form>
+                    <form method="get">
+                        <div class="message">
+                            <label for="message">Comments or Message:</label>
+                            <textarea id="message" name="content" cols="100" rows="6"></textarea>
+                            <small class="small"></small>
+                            <button type="submit"><i class="fa fa-send icon"></i> Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <p> &copy Copyright 2023, Design by Duong Tan Dat.</p>
+    </footer>
+
+    <script src="/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/chart.js/chart.umd.js"></script>
+    <script src="/vendor/echarts/echarts.min.js"></script>
+    <script src="/vendor/quill/quill.js"></script>
+    <script src="/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="/vendor/tinymce/tinymce.min.js"></script>
+    <script src="/vendor/php-email-form/validate.js"></script>
+  
+    <!-- Template Main JS File -->
+    <script src="/js/Admin.js"></script>
+</body>
+
+</html>
