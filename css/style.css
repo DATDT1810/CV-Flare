@@ -2869,8 +2869,8 @@ p.artficial:before{
     margin-bottom: 20px;
     padding: 40px 30px;
     text-align: right;
-    background: url(../img/core-img/price.png) no-repeat top right;
-    background-size: 75%;
+    background: url(../img/core-img/price_custom.png) no-repeat top right;
+    background-size: 80%;
 }
 .free-7{
     border: 1px solid #1d88ed;
@@ -2901,10 +2901,11 @@ p.artficial:before{
     color: #1d88ed;
 }
 .price_table_text > h1 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: #fff !important;
     margin-bottom: 10px;
+    margin-left: -25px;
     line-height: 1;
 }
 
