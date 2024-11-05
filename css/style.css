@@ -2867,7 +2867,7 @@ p.artficial:before{
 
 .price_table_text {
     margin-bottom: 20px;
-    padding: 40px 30px;
+    padding: 40px 5px;
     text-align: right;
     background: url(../img/core-img/price_custom.png) no-repeat top right;
     background-size: 80%;
